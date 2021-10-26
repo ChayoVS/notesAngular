@@ -1,27 +1,24 @@
 # Anotapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
+Aplicación para crear notas rapidas, recuerda lo que tienes que hacer, siempre disponibles.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Ejecuta `ng serve` para correr el programa. Navega a `http://localhost:4200/`.
 
-## Code scaffolding
+## Próximos alcances
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Crear componente para alojar notas archivadas.
+2. Encontrar estilos adecuados para escribir las notas.
 
-## Build
+## Construido con 🛠️
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+***
+* [Angular](https://angular.io/): Version 12.2.11
+* [Ng Bootstrap](https://ng-bootstrap.github.io/#/home): Version 10.0
+* [Typescript](https://www.typescriptlang.org/): Version 4.3.5
+* [Rxjs](https://rxjs.dev/): Version 4.5.0
 
-## Running unit tests
+## Autora ✒️
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Rosario Vazquez Salazar(Chayo VS)
