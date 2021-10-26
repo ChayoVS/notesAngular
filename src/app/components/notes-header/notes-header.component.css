@@ -1,0 +1,141 @@
+li {
+    padding: 5px 5px;
+    border: 1px transparent;
+    border-radius: 5px;
+    margin: 7px;
+}
+
+.disable-editing {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.icon-trash,
+.icon-edit,
+.icon-lock,
+.icon-lock-open,
+.icon-file {
+    height: 24px;
+    width: 24px;
+    display: block;
+    cursor: pointer;
+}
+
+.icon-toggle {
+    background: url('../../../assets/img/sidebar_collapse_toggle_nav_icon_145936.svg');
+    height: 30px;
+    width: 30px;
+    display: block;
+    cursor: pointer;
+}
+
+.icon-trash {
+    background: url('../../../assets/img/trash_bin_icon-icons.com_67981.svg');
+}
+
+.icon-edit {
+    background: url('../../../assets/img/3643749-edit-pen-pencil-write-writing_113397.svg');
+}
+
+.icon-lock {
+    background: url('../../../assets/img/blockedpadlock_85757.svg');
+}
+
+.icon-lock-open {
+    background: url('../../../assets/img/openpadlock_85814.svg');
+}
+
+.icon-file {
+    background: url('../../../assets/img/filefolder_83876.svg');
+}
+
+.icon-trash {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.icon-trash.selected {
+    opacity: 1;
+    cursor: pointer;
+}
+
+[data-tooltip] {
+    display: inline-block;
+    position: relative;
+    cursor: help;
+    padding: 4px;
+}
+
+
+/* Tooltip styling */
+
+[data-tooltip]:before {
+    content: attr(data-tooltip);
+    display: none;
+    position: absolute;
+    background: #000;
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    min-width: 100px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+/* Dynamic horizontal centering */
+
+[data-tooltip-position="top"]:before,
+[data-tooltip-position="bottom"]:before {
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+[data-tooltip-position="bottom"]:before {
+    top: 100%;
+    margin-top: 6px;
+}
+
+
+/* Tooltip arrow styling/placement */
+
+[data-tooltip]:after {
+    content: '';
+    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+
+/* Dynamic horizontal centering for the tooltip */
+
+[data-tooltip-position="top"]:after,
+[data-tooltip-position="bottom"]:after {
+    left: 50%;
+    margin-left: -6px;
+}
+
+
+/* Dynamic vertical centering for the tooltip */
+
+[data-tooltip-position="bottom"]:after {
+    top: 100%;
+    border-width: 0 6px 6px;
+    border-bottom-color: #000;
+}
+
+
+/* Show the tooltip when hovering */
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+    display: block;
+    z-index: 50;
+}

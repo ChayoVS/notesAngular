@@ -1,0 +1,10 @@
+<div class="note" [ngClass]="note.selected? 'selected': ''" (click)="noteClickHandler()">
+    <div class="card" style="width: 14rem;">
+        <div class="card-body">
+            <h5 class="card-title note-title">{{note.title | uppercase}}</h5>
+            <p class="card-text note-body">{{note.body | uppercase}}</p>
+            <p class="card-text note-date">{{note.date | uppercase}}</p>
+        </div>
+    </div>
+
+</div>

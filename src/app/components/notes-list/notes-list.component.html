@@ -1,0 +1,6 @@
+<div class="col-md-12">
+    <button class="add-new-note-btn" *ngIf="searchedNotes().length === 0" (click)="addNoteHandler()">Add Note
+    </button>
+    <app-note (noteClicked)="noteClickHandler(note)" [note]="note" *ngFor="let note of searchedNotes()">
+    </app-note>
+</div>

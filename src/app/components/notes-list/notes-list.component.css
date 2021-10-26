@@ -1,0 +1,10 @@
+.add-new-note-btn {
+    background-color: rgb(3, 13, 14);
+    color: #fff;
+    padding: 15px;
+    border: none;
+    box-shadow: 0 3px 3px #ccc;
+    margin: 5px;
+    width: 90%;
+    cursor: pointer;
+}

@@ -1,0 +1,36 @@
+<div class="p-3 mb-3">
+
+    <div class="container">
+
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-center">
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li>
+                    <span data-tooltip="Ocultar/Ver notas" data-tooltip-position="bottom" class='icon-toggle mr-3 ml-3' (click)="toggleHandler()"></span>
+                </li>
+                <li>
+                    <span data-tooltip="Eliminar" data-tooltip-position="bottom" class='icon-trash delete-icon mr-3 ml-3' [ngClass]="selectedNote ? 'selected' : ''" (click)="deleteNoteHandler()"></span>
+                </li>
+                <li>
+                    <span data-tooltip="Nueva Nota" data-tooltip-position="bottom" class='icon-edit mr-3 ml-3' [ngClass]="disableEditing ? 'disable-editing' : ''" (click)="addEditNoteHandler()"></span>
+                </li>
+                <li>
+                    <span data-tooltip="Archivar Nota" data-tooltip-position="bottom" class='icon-file mr-3 ml-3'></span>
+                </li>
+                <!-- <li>
+                    <span class='icon-lock-open mr-3 ml-3' *ngIf="!disableEditing" (click)="disableEditingHandler()"></span>
+                    <span class='icon-lock mr-3 ml-3' *ngIf="disableEditing" (click)="disableEditingHandler()"></span>
+                </li> -->
+
+            </ul>
+
+            <form action="" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+
+                <input type="search" name="" id="" class="form-control" placeholder="Buscar" aria-label="Buscar" (keyup)="searchHandler(searchInput)" #searchInput>
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
